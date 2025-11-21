@@ -20,6 +20,6 @@ covered(N1,N2) :-
     N1 = Y, N2 = X, N1 <= N2.
 covered(N1,N2) :-pair(R1,C1,R2,C2), cell(R1,C1,N1), cell(R2,C2,N2), N1<=N2.
 :- domino(N1,N2), not covered(N1,N2).
-#show pair/4.
+%#show pair/4.
 %#show covered/2.
 #show domino/2.
